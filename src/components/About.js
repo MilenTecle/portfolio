@@ -1,64 +1,84 @@
 import React from "react";
-import MapComponent from "../components/MapComponent";
+import MapComponent from "./MapComponent";
+import styles from "../styles/About.module.css";
 import Footer from "./Footer";
-import '../styles/style.css';
+import avatar from "../assets/images/avatar.jpg";
 
-const About = () => {
+const AboutMe = () => {
   return (
     <>
-    <div className="about-container">
-      {/* About Me Section */}
-      <section className="about-me-section">
-        <h2 className="text-center">About Me</h2>
-        <p className="about-description text-center">
-          Hi, I'm <strong>Milen Tecle</strong>, a Full Stack Developer with a
-          background in HR and Occupational Therapy. I am passionate about
-          leveraging technology to create solutions that make a difference.
-        </p>
-      </section>
+      <div className={styles.container}>
+        {/* Row Layout */}
+        <div className="row">
+          {/* Left Column - Personal Info */}
+          <div className="col-md-4 text-center">
+            <img
+              src={avatar}
+              alt="Milen Tecle"
+              className={styles.avatar} // Use the class from About.module.css
+            />
+            <h3 className={styles.textPrimary}>Milen Tecle</h3>
+            <p className={styles.textSecondary}>Full Stack Developer Student</p>
+            <div className={styles.personalInfo}>
+              <p>
+                <strong>Name:</strong> Milen Tecle
+              </p>
+              <p>
+                <strong>Address:</strong> Sundbyberg, Stockholm, Sweden
+              </p>
+              <p>
+                <strong>Phone:</strong> +46 737 68 18 50
+              </p>
+              <p>
+                <strong>Email:</strong> milen.tecle@gmail.com
+              </p>
+            </div>
+          </div>
 
-      {/* Locations Section */}
-      <section className="locations-section">
-        <h3 className="text-center">My Location</h3>
-        <MapComponent />
-        <div className="locations">
-          <div className="location-item">
-            <h4>Sundbyberg</h4>
-            <p>
-              Sundbyberg is the municipality where I live with my family, close
-              to friends, nature, and the city.
+          {/* Right Column - About Me */}
+          <div className="col-md-8">
+            <h2 className={styles.sectionHeading}>About Me</h2>
+            <p className={styles.aboutContent}>
+              Hi, I'm Milen Tecle, a dedicated HR professional transitioning into
+              the exciting world of technology as a Full Stack Developer. My
+              passion lies in creating innovative solutions and bridging the gap
+              between human resources and technology.
             </p>
-          </div>
-          <div className="location-item">
-            <h4>Norrmalmstorg</h4>
-            <p>
-              Norrmalmstorg is where my current office is located. I work as an
-              HR coordinator with flexibility to work remotely and in the
-              office.
-            </p>
-          </div>
-          <div className="location-item">
-            <h4>Väddö</h4>
-            <p>
-              Väddö is our country house where we enjoy the tranquility and
-              escape from the city during weekends and holidays.
-            </p>
+            <div className="row">
+              <div className="col-md-6 mb-4">
+                <h4 className={styles.textSecondary}>What Do I Do?</h4>
+                <p>
+                  I am currently a Full Stack Developer Student at Code Institute,
+                  where I am mastering front-end and back-end technologies.
+                </p>
+              </div>
+              <div className="col-md-6 mb-4">
+                <h4 className={styles.textSecondary}>How Do I Do It?</h4>
+                <p>
+                  By blending my background in HR with modern coding practices, I
+                  aim to create user-friendly, effective applications.
+                </p>
+              </div>
+              <div className="col-md-6 mb-4">
+                <h4 className={styles.textSecondary}>Why Hire Me?</h4>
+                <p>
+                  My unique blend of HR expertise and Full Stack Development
+                  skills makes me an asset in any tech or HR-tech project.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
 
-      {/* Interests Section */}
-      <section className="interests-section">
-        <h3 className="text-center">Interests</h3>
-        <p className="text-center">
-          I enjoy spending time with family and friends, exploring great food,
-          watching series, and of course, coding!
-        </p>
-      </section>
+        {/* Map Section */}
+        <div className={styles.mapContainer}>
+          <h3 className={styles.sectionHeading}>My Location</h3>
+          <MapComponent />
+        </div>
       </div>
-  <Footer />
-  </>
+      <Footer />
+    </>
   );
 };
 
-export default About;
+export default AboutMe;

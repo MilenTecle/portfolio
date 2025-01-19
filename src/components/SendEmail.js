@@ -1,7 +1,6 @@
 import emailjs from "emailjs-com";
 
 const sendMail = (e) => {
-  console.log("Event object:", e);
   e.preventDefault(); // Prevent the default form submission behavior
 
   // Use the EmailJS service and template IDs to send an email

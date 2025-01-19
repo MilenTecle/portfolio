@@ -11,20 +11,25 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <NavLink className="nav-link" to="/">
-              Home
+            <NavLink className="nav-link" to="/"
+            >
+              <i className="fas fa-home"></i> Home
             </NavLink>
-            <NavLink className="nav-link" to="/about">
-              About Me
+            <NavLink className="nav-link" to="/about"
+            >
+              <i className="fas fa-user"></i> About Me
             </NavLink>
-            <NavLink className="nav-link" to="/resume">
-              Resume
+            <NavLink className="nav-link" to="/resume"
+            >
+              <i className="fas fa-file-alt"></i> Resume
             </NavLink>
-            <NavLink className="nav-link" to="/projects">
-              Projects
+            <NavLink className="nav-link" to="/projects"
+            >
+              <i className="fas fa-tasks"></i> Projects
             </NavLink>
-            <NavLink className="nav-link" to="/contact">
-              Contact
+            <NavLink className="nav-link" to="/contact"
+            >
+              <i className="fas fa-envelope"></i> Contact
             </NavLink>
             <NavLink
               className="nav-link"
@@ -32,7 +37,7 @@ const NavBar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Download CV
+              <i className="fa fa-download" aria-hidden="true"></i> Download CV
             </NavLink>
           </Nav>
         </Navbar.Collapse>

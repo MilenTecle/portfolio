@@ -31,7 +31,7 @@ const Contact = () => {
             </h5>
 
             <div className="center-form">
-              <form onSubmit={sendMail}>
+              <form onSubmit={(e) => sendMail(e)}>
                 <input
                   type="text"
                   name="name"
