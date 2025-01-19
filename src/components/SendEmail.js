@@ -14,7 +14,7 @@ const sendMail = (e) => {
         from_email: e.target.email.value,
         project_request: e.target.projectsummary.value,
       },
-      process.env.EMAILJS_USER_ID
+      process.env.REACT_APP_EMAILJS_USER_ID
     )
     .then(
       (response) => {
