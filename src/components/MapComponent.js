@@ -1,5 +1,5 @@
-import React from 'react';
-import { GoogleMap, useJsApiLoader, Marker, MarkerClusterer } from '@react-google-maps/api';
+import React, { useEffect, useRef } from 'react';
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 const containerStyle = {
   width: '100%',
@@ -7,42 +7,50 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 60.1282,
-  lng: 18.6435,
+  lat: 59.3683,
+  lng: 17.9602,
 };
 
-const locations = [
-  { lat: 59.9793, lng: 18.8793 },
-  { lat: 59.3611, lng: 17.9711 },
-  { lat: 59.3344, lng: 18.0675 },
-];
+const location = { lat: 59.3683, lng: 17.9602 };
+
+// Define the libraries array outside the component
+const libraries = ['marker'];
 
 const MapComponent = () => {
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+    libraries, // Pass the pre-defined constant
   });
 
-  const createKey = (location) => `${location.lat}-${location.lng}`;
+  const mapRef = useRef(null);
+
+  useEffect(() => {
+    if (isLoaded && mapRef.current) {
+      // Initialize the map
+      const map = new google.maps.Map(mapRef.current, {
+        center: center,
+        zoom: 10,
+        mapId: "c58392883d4c9e59",
+      });
+
+      // Add AdvancedMarkerElement
+      if (google.maps.marker && google.maps.marker.AdvancedMarkerElement) {
+        new google.maps.marker.AdvancedMarkerElement({
+          map: map,
+          position: location,
+          title: "My Location",
+        });
+      } else {
+        console.error("AdvancedMarkerElement is not available.");
+      }
+    }
+  }, [isLoaded]);
 
   if (!isLoaded) {
     return <div>Loading...</div>;
   }
 
-  return (
-    <GoogleMap
-      mapContainerStyle={containerStyle}
-      center={center}
-      zoom={3}
-    >
-      <MarkerClusterer>
-        {(clusterer) =>
-          locations.map((location) => (
-            <Marker key={createKey(location)} position={location} clusterer={clusterer} />
-          ))
-        }
-      </MarkerClusterer>
-    </GoogleMap>
-  );
+  return <div ref={mapRef} style={containerStyle}></div>;
 };
 
 export default MapComponent;

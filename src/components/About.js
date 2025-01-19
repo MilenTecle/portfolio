@@ -19,7 +19,7 @@ const About = () => {
 
       {/* Locations Section */}
       <section className="locations-section">
-        <h3 className="text-center">My Locations</h3>
+        <h3 className="text-center">My Location</h3>
         <MapComponent />
         <div className="locations">
           <div className="location-item">
