@@ -54,28 +54,25 @@ const Projects = () => {
   return (
     <>
       <div className="container">
-        <h2>My Projects</h2>
-        <br></br>
-
-        {/* Curated Projects */}
+        <h2 className={styles.projectsHeading}>My Projects</h2>
         <div className="row">
           {projects.map((project, index) => (
             <div className="col-md-4 d-flex" key={index}>
-              <div className="card mb-4 shadow-sm flex-column">
+              <div className={`${styles.card} mb-4 shadow-sm flex-column`}>
                 <img
                   src={project.image}
-                  className="card-img-top"
+                  className={styles.cardImage}
                   alt={`${project.name} screenshot`}
                 />
-                <div className="card-body d-flex flex-column">
-                  <h5 className="card-title">{project.name}</h5>
-                  <p className="card-text">{project.description}</p>
+                <div className={`${styles.cardBody} d-flex flex-column`}>
+                  <h5 className={styles.cardTitle}>{project.name}</h5>
+                  <p className={styles.cardText}>{project.description}</p>
                   <div className="d-flex justify-content-between align-items-center mt-auto">
                     <a
                       href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn btn-primary"
+                      className={`btn btn-primary ${styles.viewLiveButton}`}
                     >
                       View Live
                     </a>
@@ -83,7 +80,7 @@ const Projects = () => {
                       href={project.repoLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn btn-secondary"
+                      className={`btn btn-secondary ${styles.repoButton}`}
                     >
                       GitHub Repo
                     </a>
@@ -93,12 +90,12 @@ const Projects = () => {
             </div>
           ))}
         </div>
+      </div>
 
-        {/* GitHubInfo Section */}
-        <div className="github-section">
-          <h3>Explore More Repositories</h3>
-          <GitHubInfo />
-        </div>
+      {/* GitHubInfo Section */}
+      <div className="github-section">
+        <h3>Explore More Repositories</h3>
+        <GitHubInfo />
       </div>
       <Footer />
     </>

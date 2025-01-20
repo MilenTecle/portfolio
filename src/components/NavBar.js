@@ -5,39 +5,33 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+    <Navbar bg="dark" variant="dark" expand="lg" fixed="top" className={styles.NavBar}>
       <Container>
         <Navbar.Brand href="/">My Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <NavLink className="nav-link" to="/"
-            >
-              <i className="fas fa-home"></i> Home
+            <NavLink className={`${styles.NavLink} nav-link`} to="/">
+              Home
             </NavLink>
-            <NavLink className="nav-link" to="/about"
-            >
-              <i className="fas fa-user"></i> About Me
+            <NavLink className={`${styles.NavLink} nav-link`} to="/about">
+              About Me
             </NavLink>
-            <NavLink className="nav-link" to="/resume"
-            >
-              <i className="fas fa-file-alt"></i> Resume
+            <NavLink className={`${styles.NavLink} nav-link`} to="/resume">
+              Resume
             </NavLink>
-            <NavLink className="nav-link" to="/projects"
-            >
-              <i className="fas fa-tasks"></i> Projects
+            <NavLink className={`${styles.NavLink} nav-link`} to="/projects">
+              Projects
             </NavLink>
-            <NavLink className="nav-link" to="/contact"
-            >
-              <i className="fas fa-envelope"></i> Contact
+            <NavLink className={`${styles.NavLink} nav-link`} to="/contact">
+              Contact
             </NavLink>
             <NavLink
-              className="nav-link"
+              className={`${styles.NavLink} nav-link`}
               to="/cv-milen-tecle.pdf"
               target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa fa-download" aria-hidden="true"></i> Download CV
+              rel="noopener noreferrer">
+              Download CV
             </NavLink>
           </Nav>
         </Navbar.Collapse>

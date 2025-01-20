@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/style.css';
+import styles from "../styles/ContactForm.module.css";
 import Footer from "./Footer";
 import sendMail from "./SendEmail";
 
@@ -31,38 +31,32 @@ const Contact = () => {
             </h5>
 
             <div className="center-form">
-              <form onSubmit={(e) => sendMail(e)}>
+              <form onSubmit={(e) => sendMail(e)} className={styles.contactForm}>
+                <label htmlFor="fullname">Name</label>
                 <input
                   type="text"
                   name="name"
                   id="fullname"
-                  className="form-control"
-                  placeholder="Name"
+                  placeholder="Your Name"
                   required
                 />
+                <label htmlFor="emailaddress">Email</label>
                 <input
                   type="email"
                   name="email"
                   id="emailaddress"
-                  className="form-control"
-                  placeholder="Email"
+                  placeholder="Your Email"
                   required
                 />
+                <label htmlFor="projectsummary">Project Description</label>
                 <textarea
-                  rows="5"
                   name="projectsummary"
                   id="projectsummary"
-                  className="form-control"
-                  placeholder="Project description"
+                  placeholder="Describe your project"
+                  rows="5"
                   required
                 ></textarea>
-                <div className="form-row text-center">
-                  <div className="col">
-                    <button type="submit" className="btn btn-secondary">
-                      Send Project Request
-                    </button>
-                  </div>
-                </div>
+                <button type="submit" className="btn-primary">Send</button>
               </form>
             </div>
           </div>
