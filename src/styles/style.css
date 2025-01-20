@@ -1,78 +1,16 @@
 /* Footer Styling */
 body {
-    padding-bottom: 60px; /* Add space at the bottom of the content */
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f2f2f2;
+     font-family: 'Poppins', sans-serif;
     color: #333;
-    background-color: #f8f9fa;
-  }
+}
 
-footer {
-    background-color: #343a40;
-    color: #fafafa;
-    position: fixed; /* Fix the footer to the bottom */
-    bottom: 0;
-    width: 100%;
-    min-height: 60px; /* Adjust the height */
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Center align text vertically */
-    padding: 10px 20px; /* Adjust padding for less space */
-    z-index: 1000; /* Ensure it stays above other elements */
-  }
-
-  footer .cv-pdf i {
-    font-size: 18px;
-    color: #fafafa;
-    padding-left: 5px;
-    transition: all 0.35s ease-in-out;
-  }
-
-  footer .cv-pdf i:hover {
-    color: #e84610;
-  }
-
-  .social-links {
-    display: inline-flex;
-    gap: 10px; /* Add spacing between social icons */
-    align-items: center;
-  }
-
-  .social-links li {
-    list-style: none;
-  }
-
-  .social-links li a i {
-    width: 32px;
-    height: 32px;
-    padding: 8px;
-    border-radius: 50%;
-    font-size: 16px;
-    text-align: center;
-    color: #fafafa;
-    background: #8f8f8f;
-    transition: all 0.35s ease-in-out;
-  }
-
-  .social-links li a i:hover {
-    background: #e84610;
-  }
-
-  #footer-details .col-sm-4 {
-    flex: 1; /* Ensure equal spacing */
-    text-align: center; /* Center align text */
-    padding: 0 10px;
-  }
-
-  #footer-details h5 {
-    margin-bottom: 5px; /* Reduce space below headings */
+h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
+}
 
-  #footer-details p {
-    margin: 0;
-    font-size: 12px; /* Smaller font size for compact design */
-  }
+p, a, li {
+    font-weight: 300;
+}

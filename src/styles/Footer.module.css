@@ -1,0 +1,36 @@
+.footer {
+    background-color: #343a40;
+    color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .socialIcons {
+    display: flex;
+    gap: 20px; /* Space between icons */
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc107;
+    border-radius: 50%;
+    color: #343a40;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .icon:hover {
+    background-color: #e0a800;
+    transform: scale(1.1);
+  }

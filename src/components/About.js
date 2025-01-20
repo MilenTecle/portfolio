@@ -2,7 +2,7 @@ import React from "react";
 import MapComponent from "./MapComponent";
 import styles from "../styles/About.module.css";
 import Footer from "./Footer";
-import avatar from "../assets/images/avatar.jpg";
+import avatar from "../assets/images/avatar1.jpg";
 
 const AboutMe = () => {
   return (
