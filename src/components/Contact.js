@@ -6,20 +6,6 @@ import sendMail from "./SendEmail";
 const Contact = () => {
   return (
     <>
-      <header>
-        <div className="row no-gutters">
-          <a href="/" className="col-md-4 logo"></a>
-          <div className="col-md-8">
-            <div className="row no-gutters bg-color-name-title">
-              <div className="col heading">
-                <h1 className="name">Milen Tecle</h1>
-                <h2 className="title">Full Stack Developer Student</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
       <section className="container-fluid">
         <div className="row bg-color-contact">
           <div className="col">
@@ -31,7 +17,7 @@ const Contact = () => {
             </h5>
 
             <div className="center-form">
-              <form onSubmit={(e) => sendMail(e)} className={styles.contactForm}>
+              <form onSubmit={sendMail} className={styles.contactForm}>
                 <label htmlFor="fullname">Name</label>
                 <input
                   type="text"
