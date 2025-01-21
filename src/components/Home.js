@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "./Footer";
-import styles from "../styles/Home.module.css"
+import styles from "../styles/Home.module.css";
 
 const Home = () => {
+  useEffect(() => {
+    document.body.classList.add(styles.homeBody);
+
+    return () => {
+      document.body.classList.remove(styles.homeBody);
+    };
+  }, []);
+
   return (
     <>
       <div className={styles.heroSection}>

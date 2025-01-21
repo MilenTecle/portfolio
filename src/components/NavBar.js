@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" fixed="top" className={styles.NavBar}>
+    <Navbar bg="light" variant="light" expand="lg" fixed="top" className={styles.NavBar}>
       <Container>
       <Navbar.Brand href="/" className="d-flex align-items-center">
           <img
