@@ -57,7 +57,7 @@ const Projects = () => {
         <h2 className={styles.projectsHeading}>My Projects</h2>
         <div className="row">
           {projects.map((project, index) => (
-            <div className="col-md-4 d-flex" key={index}>
+            <div className="col-md-4 d-flex mb-4" key={index}>
               <div className={`${styles.card} mb-4 shadow-sm flex-column`}>
                 <img
                   src={project.image}
@@ -93,9 +93,11 @@ const Projects = () => {
       </div>
 
       {/* GitHubInfo Section */}
-      <div className="github-section">
+      <div class="container">
+      <div className="github-section mb-5 mt-5">
         <h3>Explore More Repositories</h3>
         <GitHubInfo />
+      </div>
       </div>
       <Footer />
     </>
