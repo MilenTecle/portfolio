@@ -1,19 +1,20 @@
 .footer {
     background-color: white;
-    color: #fafafa;
+    color: #343a40; /* Adjusted for readability */
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Stack items vertically */
     align-items: center;
     padding: 20px 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
-    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
   }
+
 
   .socialIcons {
     display: flex;
     gap: 20px; /* Space between icons */
+    margin-bottom: 10px; /* Space between icons and contact section */
+    justify-content: center;
   }
 
   .icon {
@@ -33,4 +34,26 @@
   .icon:hover {
     background-color: #e0a800;
     transform: scale(1.1);
+  }
+
+  .contactSection {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .contactLink {
+    color: #ffc107;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .contactLink:hover {
+    text-decoration: underline;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: -20px;
   }

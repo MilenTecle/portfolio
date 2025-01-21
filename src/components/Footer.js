@@ -3,7 +3,7 @@ import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={`fixed-bottom ${styles.footer}`}>
       <div className={styles.socialIcons}>
         <a
           href="https://github.com/MilenTecle"
@@ -37,6 +37,21 @@ const Footer = () => {
         >
           <i className="fa fa-download"></i>
         </a>
+      </div>
+      <div className={styles.contactSection}>
+        <p>
+          Contact me:{" "}
+          <a href="mailto:milen.tecle@gmail.com" className={styles.contactLink}>
+          milen.tecle@gmail.com
+          </a>{" "}
+          or{" "}
+          <a href="/contact" className={styles.contactLink}>
+            fill out the form
+          </a>
+        </p>
+      </div>
+      <div className={styles.copyright}>
+        <p>© {new Date().getFullYear()} Milen Tecle. All Rights Reserved.</p>
       </div>
     </footer>
   );
