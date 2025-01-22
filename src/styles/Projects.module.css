@@ -1,80 +1,101 @@
 .projectsHeading {
     text-align: center;
-    margin-bottom: 30px;
     font-size: 2rem;
-    font-weight: bold;
-  }
+    margin-bottom: 20px;
+    color: #6b705c;
+    /* Olive Green */
+}
 
-  .row {
-    margin-bottom: 20px; /* Add space between rows */
-  }
-
-  .card {
-    height: 100%; /* Equal height for all cards */
+.sliderItem {
     display: flex;
-    flex-direction: column;
-    border: 1px solid #dadada;
-    border-radius: 8px; /* Rounded corners */
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.3s ease-in-out; /* Animation on hover */
-  }
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
 
-  .card:hover {
-    transform: scale(1.03); /* Slight zoom effect */
-  }
-
-  .cardImage {
-    height: 180px; /* Reduced height for better proportion */
-    object-fit: cover; /* Maintain aspect ratio */
-  }
-
-  .cardBody {
-    flex-grow: 1;
-    padding: 15px; /* Add padding for better spacing */
+/* Arrows Styling */
+:global(.slick-prev),
+:global(.slick-next) {
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 50%;
     display: flex;
-    flex-direction: column;
-  }
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: background 0.3s ease;
+}
 
-  .cardTitle {
+:global(.slick-prev:hover),
+:global(.slick-next:hover) {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+:global(.slick-prev:before),
+:global(.slick-next:before) {
+    font-size: 20px;
+    color: #ffc107;
+}
+
+.card {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cardImage {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.cardBody {
+    padding: 15px;
+}
+
+.cardTitle {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 10px;
-  }
+    margin: 10px 0;
+    color: #343a40;
+}
 
-  .cardText {
+.cardText {
     font-size: 1rem;
-    color: #6c757d;
-    flex-grow: 1; /* Push buttons to the bottom */
-  }
+    margin-bottom: 20px;
+    color: #555;
+}
 
-  .viewLiveButton,
-  .repoButton {
-    padding: 8px 16px;
-    font-size: 0.9rem;
-    border-radius: 4px;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
+.viewLiveButton,
+.repoButton {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
 
-  .viewLiveButton {
-    background-color: #007bff;
+.viewLiveButton {
+    background-color: #ffc107;
     color: #fff;
-    border: none;
-  }
+}
 
-  .repoButton {
-    background-color: #6c757d;
+.viewLiveButton:hover {
+    background-color: #e0a800;
+}
+
+.repoButton {
+    background-color: #6b705c;
     color: #fff;
-    border: none;
-  }
+}
 
-  .viewLiveButton:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-  }
-
-  .repoButton:hover {
-    background-color: #565e64;
-    transform: scale(1.05);
-  }
+.repoButton:hover {
+    background-color: #4f5543;
+}
