@@ -1,0 +1,146 @@
+/* Resume Container */
+.resumeContainer {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+  }
+
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #6b705c, #b7b7a4); /* Olive and beige tones */
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .hero img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 15px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin: 0;
+    opacity: 0.9;
+  }
+
+  /* Section Titles */
+  .section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #6b705c; /* Olive Green */
+    position: relative;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .section h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #b7b7a4; /* Beige */
+    margin: 10px auto;
+    border-radius: 2px;
+  }
+
+  .section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .section ul li {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #4f5543;
+  }
+
+  /* Skills */
+  .skill {
+    margin-bottom: 20px;
+  }
+
+  .skillTitle {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .skillBar {
+    position: relative;
+    background: #e8e4d9; /* Light Beige */
+    border-radius: 20px;
+    height: 10px;
+    overflow: hidden;
+  }
+
+  .skillBar::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background: #6b705c; /* Olive Green */
+    width: var(--skill-level);
+    transition: width 0.3s ease-in-out;
+  }
+
+  /* Timeline */
+  .timeline {
+    border-left: 2px solid #6b705c; /* Olive Green */
+    padding-left: 15px;
+  }
+
+  .timelineItem {
+    margin-bottom: 20px;
+    position: relative;
+    background: #e8e4d9; /* Light Beige */
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .timelineItem h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6b705c; /* Olive Green */
+  }
+
+  .timelineItem span {
+    font-size: 0.9rem;
+    color: #4f5543; /* Dark Olive */
+  }
+
+  .timelineItem p {
+    margin: 5px 0 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* Download Button */
+  .btnDownload {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #6b705c; /* Olive Green */
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btnDownload:hover {
+    background-color: #4f5543; /* Dark Olive */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
