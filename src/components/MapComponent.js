@@ -1,5 +1,6 @@
+/* global google */
 import React, { useEffect, useRef } from 'react';
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+import { useJsApiLoader } from '@react-google-maps/api';
 
 const containerStyle = {
   width: '60%',
