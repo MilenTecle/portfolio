@@ -49,7 +49,7 @@
   }
 
   .contactLink:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .copyright {

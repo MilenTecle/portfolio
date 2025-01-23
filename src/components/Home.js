@@ -15,7 +15,7 @@ const Home = () => {
     <>
       <div className={styles.heroSection}>
         <h1 className={styles.heroTitle}>Hey, I'm Milen Tecle</h1>
-        <p className={styles.heroSubtitle}>
+        <p className={`${styles.heroSubtitle} mb-5 `}>
           A Full Stack Developer passionate about building amazing applications.
         </p>
         <a href="/projects" className={styles.btnPrimary}>
