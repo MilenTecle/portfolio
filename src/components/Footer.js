@@ -3,7 +3,7 @@ import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className={`fixed-bottom ${styles.footer}`}>
+    <footer className={styles.footer}>
       <div className={styles.socialIcons}>
         <a
           href="https://github.com/MilenTecle"

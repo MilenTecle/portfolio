@@ -3,9 +3,10 @@ import React, { useEffect, useRef } from 'react';
 import { useJsApiLoader } from '@react-google-maps/api';
 
 const containerStyle = {
-  width: '60%',
+  width: '90%',
   height: '400px',
   margin: 'auto',
+  marginBottom: '80px',
 };
 
 const center = {

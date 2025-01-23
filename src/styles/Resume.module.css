@@ -102,6 +102,7 @@
     border-radius: 50px;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
+    margin-bottom:  60px;
   }
 
   .btnDownload:hover {
