@@ -19,11 +19,11 @@ const sendMail = (e) => {
       (response) => {
         console.log("SUCCESS", response);
         e.target.reset(); // Reset the form fields
-        alert("Email sent successfully!"); // Display a success message
+        alert("Thank you for reaching out! Your message has been sent successfully!. I'll get back to you as soon as possible."); // Display a success message
       },
       (error) => {
         console.error("FAILED", error);
-        alert("Failed to send email. Please try again later."); // Display an error message
+        alert("Oops! Something went wrong while sending your message. Please check you internet connection and try again. If the issue persists, feel free to email me directly at milen.tecle@gmail.com"); // Display an error message
       }
     );
 };
