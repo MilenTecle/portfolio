@@ -51,7 +51,7 @@ const Projects = () => {
   const sliderSettings = {
     dots: true, // Show navigation dots
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1, // Show one slide at a time
     slidesToScroll: 1,
     autoplay: true,
