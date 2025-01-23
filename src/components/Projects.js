@@ -13,37 +13,37 @@ const Projects = () => {
   const projects = [
     {
       name: "Znapped",
-      description: "A tool to search and view GitHub repositories.",
+      description: "Znapped is a social media application built using React.js for the frontend and Django REST Framework for the backend. It allows users to create posts, follow other users, like and comment on posts, send direct messages and manage notifications.",
       image: znappedImage,
       liveLink: "https://znapped-972f129d36da.herokuapp.com/",
       repoLink: "https://github.com/MilenTecle/znapped",
     },
     {
       name: "Inventory Manager",
-      description: "A modern portfolio showcasing my work.",
+      description: "The Inventory Manager app is built using Django. It is designed to help users efficiently manage their inventories and promote sustainable living. The Inventory Manager app provides a user-friendly interface for creating, organizing and sharing lists of items. Each list is associated with a unique QR code for easy access and sharing.",
       image: inventoryManagerImage,
       liveLink: "https://inventory-manager-milen-aa94458871b4.herokuapp.com/",
       repoLink: "https://github.com/MilenTecle/Inventory-Manager",
     },
     {
       name: "Random Destination Generator",
-      description: "A modern portfolio showcasing my work.",
+      description: "Random Destination Generator is a Python terminal application. The application runs in the Code Institute mock terminal on Heroku. The user will get a random destination presented based on their choice of continent. The data is retrieved from a spreadsheet using Google Sheets API.",
       image: randomDestinationImage,
       liveLink: "https://random-destination-generator-3e9ef050a262.herokuapp.com/",
       repoLink: "https://github.com/MilenTecle/random-destination",
     },
     {
       name: "Human Body Quiz",
-      description: "A modern portfolio showcasing my work.",
+      description: "The Human Body Quiz is a general knowledge quiz about the human body. The languages used to build the quiz were HTML, CSS and Javascript. The quiz offers three different levels and the user can get the scores sent to their email. The quiz is for everyone, for those curious about their general knowledge about the human body and for those wanting to improve their knowledge.",
       image: humanBodyQuizImage,
       liveLink: "https://milentecle.github.io/human-body-quiz/",
       repoLink: "https://github.com/MilenTecle/human-body-quiz",
     },
     {
       name: "Coffee Ceremony",
-      description: "A modern portfolio showcasing my work.",
+      description: "For my very first project I built a static front-end site using HTML and CSS. Coffee ceremony is a website intended for coffee lovers and coffee drinkers with a curiosity and interest in other traditions and cultures. Coffee ceremony will introduce the coffee ceremony of Ethiopia and Eritrea.",
       image: coffeeCeremonyImage,
-      liveLink: "https://github.com/MilenTecle/human-body-quiz",
+      liveLink: "https://milentecle.github.io/coffee-ceremony/",
       repoLink: "https://github.com/MilenTecle/coffee-ceremony",
     },
   ];
