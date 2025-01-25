@@ -1,7 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
 import Footer from "./Footer";
-import GitHubInfo from "./GitHubInfo";
 import styles from "../styles/Projects.module.css";
 import ProjectCard from "./ProjectCard";
 import coffeeCeremonyImage from "../assets/images/coffee-ceremony.png";
