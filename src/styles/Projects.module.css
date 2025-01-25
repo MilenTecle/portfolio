@@ -2,8 +2,7 @@
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #6b705c;
-    /* Olive Green */
+    color: #6b705c; /* Olive Green */
 }
 
 .sliderItem {
@@ -52,7 +51,7 @@
 .cardImage {
     width: 100%;
     max-width: 300px;
-    margin: 0 auto;
+    margin: 0 auto 15px; /* Add spacing below the image */
     border-radius: 8px;
 }
 
@@ -67,24 +66,62 @@
     color: #343a40;
 }
 
+/* Adjust for desktop */
 .cardText {
     font-size: 1rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Add spacing below text */
     color: #555;
+    line-height: 1.6; /* Improve readability */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: unset; /* No truncation on desktop by default */
+    -webkit-box-orient: vertical;
+    transition: max-height 0.3s ease-in-out;
 }
 
+/* Expand logic for mobile devices */
+@media (max-width: 768px) {
+    .cardText {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        -webkit-line-clamp: 3; /* Limit text to 3 lines on mobile */
+    }
+    .cardText.expanded {
+        -webkit-line-clamp: unset; /* Remove truncation */
+        max-height: none; /* Allow full text display */
+    }
+}
+
+/* Hide "Read More" button on desktop */
+.readMoreButton {
+    display: none; /* Hide by default */
+}
+
+@media (max-width: 768px) {
+    .readMoreButton {
+        display: inline; /* Show only on mobile */
+        font-size: 0.85rem; /* Adjust button size for smaller screens */
+    }
+}
+
+/* Buttons */
 .viewLiveButton,
 .repoButton {
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px 20px; /* Add padding for better spacing */
     border-radius: 5px;
     font-weight: bold;
     transition: all 0.3s ease;
+    display: inline-block; /* Ensure buttons are inline */
+    width: auto; /* Adjust width for side-by-side layout */
+    text-align: center;
 }
 
 .viewLiveButton {
     background-color: #ffc107;
     color: #fff;
+    border: none;
 }
 
 .viewLiveButton:hover {
@@ -98,4 +135,59 @@
 
 .repoButton:hover {
     background-color: #4f5543;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center; /* Center buttons */
+    gap: 10px; /* Add spacing between buttons */
+    margin-top: 15px; /* Add spacing above buttons */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .projectsHeading {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .card {
+        width: 95%; /* Reduce card width */
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .cardImage {
+        max-width: 250px;
+    }
+
+    .cardText {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        -webkit-line-clamp: 3; /* Limit text to 3 lines on mobile */
+    }
+
+    .readMoreButton {
+        font-size: 0.85rem; /* Adjust button size for smaller screens */
+        border: none;
+        border-radius: 3px;
+        margin-bottom: 10px;
+    }
+
+    .btnContainer {
+        flex-direction: row; /* Arrange buttons in a row */
+        gap: 10px; /* Ensure consistent spacing */
+    }
+
+    .viewLiveButton,
+    .repoButton {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    display: inline-block; /* Ensure buttons are inline */
+    width: auto; /* Adjust width for side-by-side layout */
+    text-align: center;
+}
 }

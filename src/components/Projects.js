@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import Footer from "./Footer";
 import GitHubInfo from "./GitHubInfo";
 import styles from "../styles/Projects.module.css";
+import ProjectCard from "./ProjectCard";
 import coffeeCeremonyImage from "../assets/images/coffee-ceremony.png";
 import humanBodyQuizImage from "../assets/images/human-body-quiz.png";
 import inventoryManagerImage from "../assets/images/inventory-manager.png";
@@ -66,42 +67,11 @@ const Projects = () => {
         <h2 className={styles.projectsHeading}>My Projects</h2>
         <Slider {...sliderSettings}>
           {projects.map((project, index) => (
-            <div key={index} className={`${styles.sliderItem}`}>
-              <div className={`${styles.card} shadow-sm`}>
-                <img
-                  src={project.image}
-                  className={styles.cardImage}
-                  alt={`${project.name} screenshot`}
-                />
-                <div className={styles.cardBody}>
-                  <h5 className={styles.cardTitle}>{project.name}</h5>
-                  <p className={styles.cardText}>{project.description}</p>
-                  <div className="d-flex justify-content-between align-items-center mt-3">
-                    <a
-                      href={project.liveLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`btn btn-primary ${styles.viewLiveButton}`}
-                    >
-                      View Live
-                    </a>
-                    <a
-                      href={project.repoLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`btn btn-secondary ${styles.repoButton}`}
-                    >
-                      GitHub Repo
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ProjectCard key={index} project={project} /> // Use ProjectCard component
           ))}
         </Slider>
       </div>
 
-      {/* GitHubInfo Section */}
       <div className="container">
         <div className="github-section mb-5 mt-5">
           <h3>Explore More Repositories</h3>
