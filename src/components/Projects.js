@@ -71,13 +71,6 @@ const Projects = () => {
           ))}
         </Slider>
       </div>
-
-      <div className="container">
-        <div className="github-section mb-5 mt-5">
-          <h3>Explore More Repositories</h3>
-          <GitHubInfo />
-        </div>
-      </div>
       <Footer />
     </>
   );
