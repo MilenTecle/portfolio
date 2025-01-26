@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin-bottom: 50px;
 }
 
 /* Arrows Styling */
@@ -38,20 +39,27 @@
     color: #ffc107;
 }
 
+:global(.slick-dots) {
+    margin-bottom: 50px;
+}
+
 .card {
     text-align: center;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
 .cardImage {
     width: 100%;
-    max-width: 300px;
-    margin: 0 auto 15px; /* Add spacing below the image */
+    max-height: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    /* Add spacing below the image */
     border-radius: 8px;
 }
 
@@ -69,52 +77,40 @@
 /* Adjust for desktop */
 .cardText {
     font-size: 1rem;
-    margin-bottom: 15px; /* Add spacing below text */
+    margin-bottom: 15px;
+    /* Add spacing below text */
     color: #555;
-    line-height: 1.6; /* Improve readability */
+    line-height: 1.6;
+    /* Improve readability */
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: unset; /* No truncation on desktop by default */
+    -webkit-line-clamp: unset;
+    /* No truncation on desktop by default */
     -webkit-box-orient: vertical;
     transition: max-height 0.3s ease-in-out;
 }
 
-/* Expand logic for mobile devices */
-@media (max-width: 768px) {
-    .cardText {
-        font-size: 0.9rem;
-        line-height: 1.4;
-        -webkit-line-clamp: 3; /* Limit text to 3 lines on mobile */
-    }
-    .cardText.expanded {
-        -webkit-line-clamp: unset; /* Remove truncation */
-        max-height: none; /* Allow full text display */
-    }
-}
-
 /* Hide "Read More" button on desktop */
 .readMoreButton {
-    display: none; /* Hide by default */
+    display: none;
+    /* Hide by default */
 }
 
-@media (max-width: 768px) {
-    .readMoreButton {
-        display: inline; /* Show only on mobile */
-        font-size: 0.85rem; /* Adjust button size for smaller screens */
-    }
-}
 
 /* Buttons */
 .viewLiveButton,
 .repoButton {
     text-decoration: none;
-    padding: 10px 20px; /* Add padding for better spacing */
+    padding: 10px 20px;
+    /* Add padding for better spacing */
     border-radius: 5px;
     font-weight: bold;
     transition: all 0.3s ease;
-    display: inline-block; /* Ensure buttons are inline */
-    width: auto; /* Adjust width for side-by-side layout */
+    display: inline-block;
+    /* Ensure buttons are inline */
+    width: auto;
+    /* Adjust width for side-by-side layout */
     text-align: center;
 }
 
@@ -139,9 +135,12 @@
 
 .btnContainer {
     display: flex;
-    justify-content: center; /* Center buttons */
-    gap: 10px; /* Add spacing between buttons */
-    margin-top: 15px; /* Add spacing above buttons */
+    justify-content: center;
+    /* Center buttons */
+    gap: 10px;
+    /* Add spacing between buttons */
+    margin-top: 15px;
+    /* Add spacing above buttons */
 }
 
 /* Mobile Responsiveness */
@@ -152,43 +151,69 @@
     }
 
     .card {
-        width: 95%; /* Reduce card width */
+        width: 95%;
+        /* Reduce card width */
         margin: 0 auto;
         padding: 15px;
     }
 
     .cardImage {
-        max-width: 250px;
+        /*max-width: 250px;*/
+        max-height: 150px;
+        height: 150px;
+        object-fit: cover;
     }
 
     .cardText {
         font-size: 0.9rem;
         line-height: 1.4;
-        -webkit-line-clamp: 3; /* Limit text to 3 lines on mobile */
+        -webkit-line-clamp: 3;
+        /* Limit text to 3 lines on mobile */
+    }
+
+    .cardText.expanded {
+        -webkit-line-clamp: unset;
+        /* Remove truncation */
+        max-height: none;
+        /* Allow full text display */
     }
 
     .readMoreButton {
-        font-size: 0.85rem; /* Adjust button size for smaller screens */
+        font-size: 0.85rem;
         border: none;
         border-radius: 3px;
         margin-bottom: 10px;
         color: #000;
+        display: inline;
+        /* Show only on mobile */
     }
 
     .btnContainer {
-        flex-direction: row; /* Arrange buttons in a row */
-        gap: 10px; /* Ensure consistent spacing */
+        flex-direction: row;
+        /* Arrange buttons in a row */
+        gap: 10px;
+        /* Ensure consistent spacing */
     }
 
     .viewLiveButton,
     .repoButton {
-    padding: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 12px;
-    transition: all 0.3s ease;
-    display: inline-block; /* Ensure buttons are inline */
-    width: auto; /* Adjust width for side-by-side layout */
-    text-align: center;
-}
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 12px;
+        transition: all 0.3s ease;
+        display: inline-block;
+        /* Ensure buttons are inline */
+        width: auto;
+        /* Adjust width for side-by-side layout */
+        text-align: center;
+    }
+
+    :global(.slick-dots) {
+        bottom: -20px;
+    }
+
+    .sliderItem {
+        margin-bottom: 70px;
+    }
 }

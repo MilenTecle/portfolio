@@ -13,7 +13,7 @@ const Projects = () => {
   const projects = [
     {
       name: "Znapped",
-      description: "A full-stack social media platform built with React.js and Django REST Framework. Features include user posts, following functionality, likes, comments, direct messaging, and real-time notifications.",
+      description: "A full-stack social media platform built with React.js and Django REST Framework. Features include user authentication, posts, following functionality, likes, comments, direct messaging, and real-time notifications.",
       image: znappedImage,
       liveLink: "https://znapped-972f129d36da.herokuapp.com/",
       repoLink: "https://github.com/MilenTecle/znapped",
@@ -41,7 +41,7 @@ const Projects = () => {
     },
     {
       name: "Coffee Ceremony",
-      description: "A static front-end site built with HTML and CSS, introducing the Ethiopian and Eritrean coffee ceremony. Designed for coffee enthusiasts interested in exploring cultural traditions.",
+      description: "For my very first project I built a static front-end site built with HTML and CSS, introducing the Ethiopian and Eritrean coffee ceremony. Designed for coffee enthusiasts interested in exploring cultural traditions.",
       image: coffeeCeremonyImage,
       liveLink: "https://milentecle.github.io/coffee-ceremony/",
       repoLink: "https://github.com/MilenTecle/coffee-ceremony",
