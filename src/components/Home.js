@@ -14,9 +14,10 @@ const Home = () => {
   return (
     <>
       <div className={styles.heroSection}>
-        <h1 className={styles.heroTitle}>Hey, I'm Milen Tecle</h1>
+        <h1 className={styles.heroTitle}>Hi, I'm Milen Tecle</h1>
         <p className={`${styles.heroSubtitle} mb-5 `}>
-          A Full Stack Developer passionate about building amazing applications.
+          A Junior Fullstack Software Developer with a passion for building user-friendly and efficient applications.
+          Explore my projects below!
         </p>
         <a href="/projects" className={styles.btnPrimary}>
           View Projects

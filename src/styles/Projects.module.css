@@ -2,7 +2,7 @@
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #6b705c; /* Olive Green */
+    color: #6b705c;
 }
 
 .sliderItem {
@@ -172,6 +172,7 @@
         border: none;
         border-radius: 3px;
         margin-bottom: 10px;
+        color: #000;
     }
 
     .btnContainer {
