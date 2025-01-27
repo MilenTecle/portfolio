@@ -10,7 +10,7 @@ const Resume = () => {
       <header className={styles.hero}>
         <img src={avatar} alt="Milen Tecle" />
         <h1>Milen Tecle</h1>
-        <p>Full Stack Developer | HR Professional</p>
+        <p>Junior Fullstack Software Developer | HR Professional</p>
         <p>
           Email: <a href="mailto:milen_tecle@gmail.com">milen_tecle@gmail.com</a> | Phone: +46 737681850
         </p>
@@ -21,10 +21,9 @@ const Resume = () => {
         <section className={`${styles.section} mb-5 `}>
           <h2>Profile</h2>
           <p>
-            Enterprising and self-driven professional transitioning into the tech industry with a strong foundation in HR
-            coordination, project management, and digitalization. Currently developing expertise in Full Stack Software
-            Development, with practical experience in backend and frontend development. Proficient in technologies like
-            HTML, CSS, JavaScript, and Python, with experience in frameworks like React, Django, and Django REST.
+          I am a self-driven professional transitioning from HR to tech, with a strong foundation in Fullstack Development. Skilled in React, Django, Python, and SQL,
+          I am passionate about building scalable, user-friendly applications. My background in HR and project management enhances my ability to collaborate effectively and deliver innovative
+          solutions while continuously expanding my technical expertise.
           </p>
         </section>
 
@@ -80,38 +79,38 @@ const Resume = () => {
             <div className={styles.timelineItem}>
               <h3>HR Coordinator</h3>
               <span>Mannheimer Swartling Advokatbyrå AB | May 2018 - Ongoing</span>
-              <p>
-                - Processing and analyzing statistics<br />
-                - Drafting contracts and managing secondments<br />
-                - System Manager and workflow improvements
-              </p>
+              <ul className={styles.bulletList}>
+                <li>Process and analyze HR statistics to support decision-making.</li>
+                <li>Draft contracts and manage secondments, ensuring compliance and efficiency.</li>
+                <li>Serve as System Manager, overseeing system updates and ensuring seamless operations.</li>
+                <li>Collaborate with cross-functional teams to implement new policies and improve employee satisfaction.</li>
+              </ul>
             </div>
             <div className={styles.timelineItem}>
               <h3>Marketing, IT, and Communications Officer</h3>
               <span>Transfer Jobb AB | March 2016 - January 2018</span>
-              <p>
-                - Managed projects in a start-up environment<br />
-                - Responsible for internal and external communication<br />
-                - Tested new website features and services
-              </p>
+              <ul className={styles.bulletList}>
+                <li>Managed projects in a fast-paced start-up environment, focusing on scaling operations.</li>
+                <li>Directed internal and external communications to ensure consistency and clarity.</li>
+                <li>Collaborated with our team to test and implement new website features, improving user experience and engagement.</li>
+              </ul>
             </div>
             <div className={styles.timelineItem}>
               <h3>Coach</h3>
               <span>Resursteamet AB | January 2014 - December 2015</span>
-              <p>
-                - Coached individuals with neuropsychiatric disabilities<br />
-                - Established job-oriented procedures and documentation
-              </p>
+              <ul className={styles.bulletList}>
+                <li>Coached individuals with neuropsychiatric disabilities, helping them achieve job-readiness.</li>
+                <li>Developed tailored job-oriented procedures and documentation to support client success.</li>
+              </ul>
             </div>
             <div className={styles.timelineItem}>
               <h3>Occupational Therapist</h3>
               <span>Arbetsmarknadsinsatser, Rinkeby-Kista SDF | January 2011 - December 2013</span>
-              <p>
-                - Conducted an assessment of the work area and working conditions on individuals far
-                from the labor market<br />
-                - Implemented motivational interviewing as a method at work<br />
-                - Wrote investigative reports
-              </p>
+              <ul className={styles.bulletList}>
+                <li>Conducted workplace assessments to support individuals transitioning into the labor market.</li>
+                <li>Utilized motivational interviewing to empower clients and promote positive outcomes.</li>
+                <li>Prepared comprehensive investigative reports to inform program decisions.</li>
+              </ul>
             </div>
           </div>
         </section>

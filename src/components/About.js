@@ -21,26 +21,25 @@ const AboutMe = () => {
         <section className={styles.section}>
           <h2>Who Am I?</h2>
           <p>
-            I'm Milen Tecle, a Full Stack Developer based in Sundbyberg, Stockholm, Sweden.
-            With a professional background in HR and a strong foundation in technology, I bring a unique blend of
-            people skills and technical expertise to every project I work on.
+          I’m Milen Tecle, a Junior Fullstack Software Developer based in Stockholm, Sweden. With over 5 years of HR experience and a passion for technology,
+          I bring a unique combination of people skills and technical expertise to every project. My journey into tech is driven by a desire to create impactful,
+          user-friendly solutions that solve real-world problems.
           </p>
         </section>
 
         <section className={styles.section}>
           <h2>What I Do</h2>
           <p>
-            I specialize in building responsive, user-friendly applications with a focus on front-end and back-end technologies.
-            My toolkit includes technologies like React, Django, Python, and SQL, which I use to develop innovative solutions that
-            make a real impact.
+          I specialize in developing responsive, scalable applications using React, Django, Python, and SQL. My expertise spans front-end and back-end technologies,
+          enabling me to build solutions that are efficient, user-friendly, and impactful.
           </p>
         </section>
 
         <section className={styles.section}>
           <h2>Why Hire Me?</h2>
           <p>
-            With my combination of technical skills and human-centered thinking, I can help teams build scalable, user-friendly,
-            and accessible applications. I am passionate about learning, collaborating, and creating solutions that solve real-world problems.
+          My unique blend of technical skills and human-centered thinking allows me to contribute to scalable, user-focused applications. I thrive in collaborative environments and I am
+          passionate about solving complex problems through innovative solutions.
           </p>
         </section>
 

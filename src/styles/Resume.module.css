@@ -53,9 +53,22 @@
     margin: 0;
   }
 
+  .section ul.bulletList {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+
+  .section .bulletList li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+
   .section ul li {
     margin: 5px 0;
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #4f5543;
   }
 
@@ -90,6 +103,7 @@
     font-size: 0.95rem;
     line-height: 1.5;
   }
+
 
   /* Download Button */
   .btnDownload {
