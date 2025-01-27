@@ -60,7 +60,93 @@
     transition: background-color 0.3s ease;
   }
 
+  .btnSend:focus,
+  .btnSend:active {
+    outline: none;
+    background-color: #4f5543; /* Dark Olive */
+    border-color: #4f5543;
+    box-shadow: none;
+  }
+
   .btnSend:hover {
     background-color: #4f5543; /* Dark Olive */
     border-color: #4f5543;
   }
+
+  /* Alert message */
+
+/* Notification container  */
+.notification {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Align both horizontally and vertically */
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    z-index: 1000;
+    background-color: white; /* Default background color */
+    color: #155724; /* Default text color */
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 400px; /* Limit maximum width */
+    text-align: center; /* Center-align the message text */
+    border: 1px solid #c3e6cb; /* Add a border for a clean look */
+    animation: fadeIn 0.3s ease-in-out forwards, fadeOut 0.3s ease-in-out 2.7s forwards;
+}
+
+/* Success notification */
+.notification.success {
+    background-color: #d4edda; /* Green background */
+    border-color: #c3e6cb; /* Green border */
+    color: #155724; /* Green text */
+}
+
+/* Error notification */
+.notification.error {
+    background-color: #f8d7da; /* Red background */
+    border-color: #f5c6cb; /* Red border */
+    color: #721c24; /* Red text */
+}
+
+/* Close button */
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Position close button in top-right corner */
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: inherit; /* Matches the text color of the alert */
+    cursor: pointer;
+    line-height: 1;
+}
+
+.closeButton:hover {
+    color: #000; /* Slightly darker hover color for visibility */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -55%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Fade-out animation */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 0;
+        transform: translate(-50%, -45%);
+    }
+}

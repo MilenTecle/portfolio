@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/ContactForm.module.css";
 import Footer from "./Footer";
 import sendMail from "./SendEmail";
 
 const Contact = () => {
+  const [notification, setNotification] = useState(null); // Manage notification state
+
   return (
     <>
       <section className={`container ${styles.contactSection}`}>
@@ -13,7 +15,7 @@ const Contact = () => {
             Whether you’re looking for a passionate developer to join your team or need a fresh perspective on your project, I’m here to help. With a strong drive to learn and grow, I’m excited to contribute to your success. Contact me below to start the conversation.
           </p>
         </div>
-        <form onSubmit={sendMail} className={styles.contactForm}>
+        <form onSubmit={(e) => sendMail(e, setNotification)} className={styles.contactForm}>
           <label htmlFor="fullname">Name</label>
           <input
             type="text"
@@ -42,6 +44,25 @@ const Contact = () => {
             Send Message
           </button>
         </form>
+
+        {/* Notification */}
+        {notification && (
+          <div
+            className={`${styles.notification} ${
+              notification.type === "success"
+                ? styles.success
+                : styles.error
+            }`}
+          >
+            <p>{notification.message}</p>
+            <button
+              onClick={() => setNotification(null)} // Dismiss the notification
+              className={styles.closeButton}
+            >
+              &times;
+            </button>
+          </div>
+        )}
       </section>
       <Footer />
     </>

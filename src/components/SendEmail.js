@@ -1,6 +1,7 @@
 import emailjs from "emailjs-com";
+import React, { useState } from "react";
 
-const sendMail = (e) => {
+const sendMail = (e, setNotification) => {
   e.preventDefault(); // Prevent the default form submission behavior
 
   // Use the EmailJS service and template IDs to send an email
@@ -19,11 +20,19 @@ const sendMail = (e) => {
       (response) => {
         console.log("SUCCESS", response);
         e.target.reset(); // Reset the form fields
-        alert("Thank you for reaching out! Your message has been sent successfully!. I'll get back to you as soon as possible."); // Display a success message
+        setNotification({
+          message: "Thank you for reaching out! Your message has been sent successfully. I'll get back to you as soon as possible.",
+          type: "success",
+        });
+        setTimeout(() => setNotification(null), 5000);
       },
       (error) => {
         console.error("FAILED", error);
-        alert("Oops! Something went wrong while sending your message. Please check you internet connection and try again. If the issue persists, feel free to email me directly at milen.tecle@gmail.com"); // Display an error message
+        setNotification({
+          message: "Oops! Something went wrong while sending your message. Please check your internet connection and try again. If the issue persists, feel free to email me directly at milen.tecle@gmail.com.",
+          type: "error",
+        });
+        setTimeout(() => setNotification(null), 5000);
       }
     );
 };
