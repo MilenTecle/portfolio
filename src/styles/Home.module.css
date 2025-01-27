@@ -33,9 +33,11 @@
 
   .heroSubtitle {
     font-size: 1.2rem;
-    margin: 10px 0 20px;
+    margin: 20px auto;
     color: #555;
     animation: fadeIn 2s ease-in-out;
+    max-width: 600px;
+
   }
 
   .btnPrimary {
