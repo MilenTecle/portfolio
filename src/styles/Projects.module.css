@@ -50,7 +50,11 @@
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 80%;
+    height: 470px; /* Set consistent height */
     margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Make it column-based */
+    justify-content: space-between; /* Space items within card */
 }
 
 .cardImage {
@@ -112,6 +116,7 @@
     width: auto;
     /* Adjust width for side-by-side layout */
     text-align: center;
+    margin-top: 10px;
 }
 
 .viewLiveButton {
@@ -139,7 +144,7 @@
     /* Center buttons */
     gap: 10px;
     /* Add spacing between buttons */
-    margin-top: 15px;
+    margin-top: auto;
     /* Add spacing above buttons */
 }
 
@@ -153,6 +158,7 @@
     .card {
         width: 95%;
         /* Reduce card width */
+        height: 470px;
         margin: 0 auto;
         padding: 15px;
     }
@@ -163,6 +169,11 @@
         height: 150px;
         object-fit: cover;
     }
+
+    .cardTitle {
+        font-size: 1.2rem;
+    }
+
 
     .cardText {
         font-size: 0.9rem;
