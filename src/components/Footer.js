@@ -1,15 +1,10 @@
 import React from "react";
 import styles from "../styles/Footer.module.css";
-import { useLocation } from "react-router-dom";
 
 const Footer = () => {
-  const location = useLocation();
-
-  // Check if the current route is the Homepage
-  const isHomePage = location.pathname === "/";
 
   return (
-    <footer className={`${styles.footer} ${isHomePage ? styles.absoluteFooter : ""}`}>
+    <footer className={styles.footer}>
       <div className={styles.socialIcons}>
         <a
           href="https://github.com/MilenTecle"

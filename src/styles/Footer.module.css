@@ -10,12 +10,6 @@
     margin-top: auto;
   }
 
-  .absoluteFooter {
-    position: absolute;
-    bottom: 0;
-  }
-
-
   .socialIcons {
     display: flex;
     gap: 20px; /* Space between icons */
