@@ -13,17 +13,21 @@ const Home = () => {
 
   return (
     <>
-      <div className={styles.heroSection}>
-        <h1 className={styles.heroTitle}>Hi, I'm Milen Tecle</h1>
-        <p className={`${styles.heroSubtitle} mb-5 `}>
-          A Junior Fullstack Software Developer with a passion for building user-friendly and efficient applications.
-          Explore my projects below!
-        </p>
-        <a href="/projects" className={styles.btnPrimary}>
-          View Projects
-        </a>
+      <div className={styles.homeWrapper}>
+        <div className={styles.heroSection}>
+          <div className={styles.mainContent}>
+            <h1 className={styles.heroTitle}>Hi, I'm Milen Tecle</h1>
+            <p className={`${styles.heroSubtitle} mb-5`}>
+              A Junior Fullstack Software Developer with a passion for building user-friendly and efficient applications.
+              Explore my projects below!
+            </p>
+            <a href="/projects" className={styles.btnPrimary}>
+              View Projects
+            </a>
+          </div>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 };

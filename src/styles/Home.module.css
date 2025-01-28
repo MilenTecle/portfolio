@@ -18,11 +18,23 @@
   }
 
   /* Hero Section Styling */
+  .homeWrapper {
+    display: flex;
+    flex-direction: column; /* Stack header, content, footer vertically */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+  }
+
   .heroSection {
+    flex: 1; /* Take up the remaining space */
     text-align: center;
     padding: 80px 20px;
     animation: fadeIn 1s ease-in-out;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    box-sizing: border-box; /* Include padding in height calculation */
   }
 
   .heroTitle {

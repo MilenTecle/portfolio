@@ -81,8 +81,9 @@ const Resume = () => {
               <span>Mannheimer Swartling Advokatbyrå AB | May 2018 - Ongoing</span>
               <ul className={styles.bulletList}>
                 <li>Process and analyze HR statistics to support decision-making.</li>
+                <li>Responsible for maintaining and optimizing HR-related systems, to enhance employee communication and engagement.</li>
                 <li>Draft contracts and manage secondments, ensuring compliance and efficiency.</li>
-                <li>Serve as System Manager, overseeing system updates and ensuring seamless operations.</li>
+                <li>Identify and drive workflow improvements, leveraging HR technology to optimize processes.</li>
                 <li>Collaborate with cross-functional teams to implement new policies and improve employee satisfaction.</li>
               </ul>
             </div>
@@ -90,9 +91,9 @@ const Resume = () => {
               <h3>Marketing, IT, and Communications Officer</h3>
               <span>Transfer Jobb AB | March 2016 - January 2018</span>
               <ul className={styles.bulletList}>
-                <li>Managed projects in a fast-paced start-up environment, focusing on scaling operations.</li>
+                <li>Managed projects in a start-up environment, focusing on scaling operations and team-building.</li>
                 <li>Directed internal and external communications to ensure consistency and clarity.</li>
-                <li>Collaborated with our team to test and implement new website features, improving user experience and engagement.</li>
+                <li> Collaborated with cross-functional teams to test and implement new website features, improving user engagement.</li>
               </ul>
             </div>
             <div className={styles.timelineItem}>
@@ -100,16 +101,17 @@ const Resume = () => {
               <span>Resursteamet AB | January 2014 - December 2015</span>
               <ul className={styles.bulletList}>
                 <li>Coached individuals with neuropsychiatric disabilities, helping them achieve job-readiness.</li>
-                <li>Developed tailored job-oriented procedures and documentation to support client success.</li>
+                <li>Developed personalized plans, coordinating meetings with clients and teams to achieve tailored goals.</li>
+                <li>Established a job-oriented unit and created documentation procedures to support clients.</li>
               </ul>
             </div>
             <div className={styles.timelineItem}>
               <h3>Occupational Therapist</h3>
               <span>Arbetsmarknadsinsatser, Rinkeby-Kista SDF | January 2011 - December 2013</span>
               <ul className={styles.bulletList}>
-                <li>Conducted workplace assessments to support individuals transitioning into the labor market.</li>
+                <li>Conducted workplace assessments for individuals transitioning into the labor market.</li>
                 <li>Utilized motivational interviewing to empower clients and promote positive outcomes.</li>
-                <li>Prepared comprehensive investigative reports to inform program decisions.</li>
+                <li>Prepared comprehensive reports with recommended courses of action.</li>
               </ul>
             </div>
           </div>
