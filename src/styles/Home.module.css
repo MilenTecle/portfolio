@@ -34,7 +34,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center content vertically */
-    box-sizing: border-box; /* Include padding in height calculation */
   }
 
   .heroTitle {
