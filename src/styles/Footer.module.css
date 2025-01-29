@@ -37,6 +37,14 @@
     color: #333;
   }
 
+  .icon:focus,
+  .icon:active {
+    background-color: #ffc107;
+    outline: none;
+    box-shadow: none;
+  }
+
+
   .contactSection {
     text-align: center;
     font-size: 0.9rem;
