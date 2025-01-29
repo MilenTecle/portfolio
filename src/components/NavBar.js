@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import styles from "../styles/NavBar.module.css";
 import useClickOutsideToggle from "../hooks/useClickOutsideToggle";
-import logo from "../assets/images/avatar.jpg";
+import logo from "../assets/images/avatar.webp";
 import { NavLink } from "react-router-dom";
 
 const NavBar = () => {

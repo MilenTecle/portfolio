@@ -3,11 +3,11 @@ import Slider from "react-slick";
 import Footer from "./Footer";
 import styles from "../styles/Projects.module.css";
 import ProjectCard from "./ProjectCard";
-import coffeeCeremonyImage from "../assets/images/coffee-ceremony.png";
-import humanBodyQuizImage from "../assets/images/human-body-quiz.png";
-import inventoryManagerImage from "../assets/images/inventory-manager.png";
-import randomDestinationImage from "../assets/images/random-destination.png";
-import znappedImage from "../assets/images/znapped.png";
+import coffeeCeremonyImage from "../assets/images/coffee-ceremony.webp";
+import humanBodyQuizImage from "../assets/images/human-body-quiz.webp";
+import inventoryManagerImage from "../assets/images/inventory-manager.webp";
+import randomDestinationImage from "../assets/images/random-destination.webp";
+import znappedImage from "../assets/images/znapped.webp";
 
 const Projects = () => {
   const projects = [

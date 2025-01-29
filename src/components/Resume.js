@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "./Footer";
 import styles from "../styles/Resume.module.css";
-import avatar from "../assets/images/avatar1.jpg";
+import avatar from "../assets/images/avatar1.webp";
 
 const Resume = () => {
   return (
