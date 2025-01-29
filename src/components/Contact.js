@@ -40,7 +40,7 @@ const Contact = () => {
             rows="5"
             required
           ></textarea>
-          <button type="submit" className={`btn btn-primary ${styles.btnSend}`}>
+          <button type="submit" className={`btn btn-primary ${styles.btnSend} mt-3`}>
             Send Message
           </button>
         </form>
