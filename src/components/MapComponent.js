@@ -28,25 +28,28 @@ const MapComponent = () => {
   const mapRef = useRef(null);
 
   useEffect(() => {
-    if (isLoaded && mapRef.current) {
-      // Initialize the map
-      const map = new google.maps.Map(mapRef.current, {
-        center: center,
-        zoom: 10,
-        mapId: "c58392883d4c9e59",
-      });
-
-      // Add AdvancedMarkerElement
-      if (google.maps.marker && google.maps.marker.AdvancedMarkerElement) {
-        new google.maps.marker.AdvancedMarkerElement({
-          map: map,
-          position: location,
-          title: "My Location",
+    const initializeMap = async () => {
+      if (isLoaded && mapRef.current) {
+        // Initialize the map
+        const map = new google.maps.Map(mapRef.current, {
+          center: center,
+          zoom: 10,
+          mapId: "c58392883d4c9e59",
         });
-      } else {
-        console.error("AdvancedMarkerElement is not available.");
+
+        // Add AdvancedMarkerElement
+        if (google.maps.marker && google.maps.marker.AdvancedMarkerElement) {
+          new google.maps.marker.AdvancedMarkerElement({
+            map: map,
+            position: location,
+            title: "My Location",
+          });
+        } else {
+          console.error("AdvancedMarkerElement is not available.");
+        }
       }
-    }
+    };
+    initializeMap();
   }, [isLoaded]);
 
   if (!isLoaded) {
