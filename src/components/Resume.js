@@ -8,7 +8,7 @@ const Resume = () => {
     <>
       {/* Hero Section */}
       <header className={styles.hero}>
-        <img src={avatar} alt="Milen Tecle" />
+        <img src={avatar} alt="Milen Tecle" loading="lazy" />
         <h1>Milen Tecle</h1>
         <p>Junior Fullstack Software Developer | HR Professional</p>
         <p>

@@ -9,7 +9,7 @@ const AboutMe = () => {
     <>
       <div className={styles.heroSection}>
         <div className={styles.heroContent}>
-          <img src={avatar} alt="Milen Tecle" className={styles.avatar} />
+          <img src={avatar} alt="Milen Tecle" className={styles.avatar} loading="lazy"/>
           <h1 className={styles.heroTitle}>About Me</h1>
           <p className={styles.heroSubtitle}>
             Passionate about creating solutions that bridge technology and human experiences.
