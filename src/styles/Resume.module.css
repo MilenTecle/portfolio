@@ -9,8 +9,9 @@
 
   /* Hero Section */
   .hero {
-    background: url("../assets/images/background.webp") no-repeat center center fixed;
+    background: url("../assets/images/background.webp") no-repeat center center;
     background-size: cover;
+    background-color: #f5f5f5; 
     color: #6b705c;
     padding: 30px;
     text-align: center;
