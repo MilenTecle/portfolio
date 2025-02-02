@@ -10,7 +10,7 @@ const Resume = () => {
       <header className={styles.hero}>
         <img src={avatar} alt="Milen Tecle" loading="lazy" />
         <h1>Milen Tecle</h1>
-        <p>Junior Fullstack Software Developer | HR Professional</p>
+        <p>Junior Full Stack Software Developer | HR Professional</p>
         <p>
           Email: <a href="mailto:milen_tecle@gmail.com">milen_tecle@gmail.com</a> | Phone: +46 737681850
         </p>
@@ -21,7 +21,7 @@ const Resume = () => {
         <section className={`${styles.section} mb-5 `}>
           <h2>Profile</h2>
           <p>
-          I am a self-driven professional transitioning from HR to tech, with a strong foundation in Fullstack Development. Skilled in React, Django, Python, and SQL,
+          I am a self-driven professional transitioning from HR to tech, with a strong foundation in Full Stack Development. Skilled in React, Django, Python, and SQL,
           I am passionate about building scalable, user-friendly applications. My background in HR and project management enhances my ability to collaborate effectively and deliver innovative
           solutions while continuously expanding my technical expertise.
           </p>
@@ -88,7 +88,7 @@ const Resume = () => {
               </ul>
             </div>
             <div className={styles.timelineItem}>
-              <h3>Marketing, IT, and Communications Officer</h3>
+              <h3>Marketing, IT, and Communications Coordinator</h3>
               <span>Transfer Jobb AB | March 2016 - January 2018</span>
               <ul className={styles.bulletList}>
                 <li>Managed projects in a start-up environment, focusing on scaling operations and team-building.</li>

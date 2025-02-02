@@ -21,7 +21,7 @@ const AboutMe = () => {
         <section className={styles.section}>
           <h2>Who Am I?</h2>
           <p>
-          I’m Milen Tecle, a Junior Fullstack Software Developer based in Stockholm, Sweden. With over 5 years of HR experience and a passion for technology,
+          I’m Milen Tecle, a Junior Full Stack Software Developer based in Stockholm, Sweden. With over 5 years of HR experience and a passion for technology,
           I bring a unique combination of people skills and technical expertise to every project. My journey into tech is driven by a desire to create impactful,
           user-friendly solutions that solve real-world problems.
           </p>
