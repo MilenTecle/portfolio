@@ -5,6 +5,7 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
+      {/* Social media icons */}
       <div className={styles.socialIcons}>
         <a
           href="https://github.com/MilenTecle"
@@ -39,6 +40,7 @@ const Footer = () => {
           <i className="fa fa-download"></i>
         </a>
       </div>
+      {/* Contact Information Section */}
       <div className={styles.contactSection}>
         <p>
           Contact me:{" "}
@@ -51,6 +53,7 @@ const Footer = () => {
           </a>
         </p>
       </div>
+      {/* Displays the current year dynamically */}
       <div className={styles.copyright}>
         <p>© {new Date().getFullYear()} Milen Tecle. All Rights Reserved.</p>
       </div>

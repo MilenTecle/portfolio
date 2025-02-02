@@ -1,5 +1,4 @@
 import emailjs from "emailjs-com";
-import React, { useState } from "react";
 
 const sendMail = (e, setNotification) => {
   e.preventDefault(); // Prevent the default form submission behavior
@@ -24,7 +23,7 @@ const sendMail = (e, setNotification) => {
           message: "Thank you for reaching out! Your message has been sent successfully. I'll get back to you as soon as possible.",
           type: "success",
         });
-        setTimeout(() => setNotification(null), 5000);
+        setTimeout(() => setNotification(null), 5000); // Auto-dismiss notification after 5 seconds
       },
       (error) => {
         console.error("FAILED", error);

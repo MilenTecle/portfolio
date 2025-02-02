@@ -25,11 +25,13 @@ const NavBar = () => {
           />
           <span className={styles.brandName}>MILEN TECLE</span>
         </Navbar.Brand>
+        {/* Navbar Toggle Button(for mobile navigation) */}
         <Navbar.Toggle
-          ref={ref}
+          ref={ref} // use ref from custom hook to handle click outside
           aria-controls="basic-navbar-nav"
-          onClick={() => setExpanded(!expanded)}
+          onClick={() => setExpanded(!expanded)} // Toggle navigation menu
         />
+        {/* Collapsible Navigation Menu */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <NavLink className={`${styles.NavLink} nav-link`} to="/">
@@ -38,7 +40,7 @@ const NavBar = () => {
             <NavLink
               className={`${styles.NavLink} nav-link`}
               to="/about"
-              onClick={() => setExpanded(false)}
+              onClick={() => setExpanded(false)} // Close menu on link click
             >
               ABOUT ME
             </NavLink>
@@ -63,6 +65,7 @@ const NavBar = () => {
             >
               CONTACT
             </NavLink>
+            {/* CV Download Link */}
             <NavLink
               className={`${styles.NavLink} nav-link`}
               to="/cv-milen-tecle.pdf"

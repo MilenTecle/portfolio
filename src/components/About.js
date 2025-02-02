@@ -4,6 +4,7 @@ import styles from "../styles/About.module.css";
 import Footer from "./Footer";
 import avatar from "../assets/images/avatar1.webp";
 
+// AboutMe component - Displays an introduction, skills and background information
 const AboutMe = () => {
   return (
     <>
@@ -53,12 +54,12 @@ const AboutMe = () => {
         </section>
       </div>
 
-      {/* Map Section */}
+      {/* Map Section: Displays a Google Map with the location */}
       <div className={styles.mapContainer}>
         <h3 className={styles.sectionHeading}>Where Am I?</h3>
         <MapComponent />
       </div>
-
+      {/* Footer component */}
       <Footer />
     </>
   );

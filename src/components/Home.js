@@ -3,16 +3,20 @@ import Footer from "./Footer";
 import styles from "../styles/Home.module.css";
 
 const Home = () => {
+  // Apply home page background style to the body when the component mounts
   useEffect(() => {
+    // Add a class to the body for styling
     document.body.classList.add(styles.homeBody);
 
     return () => {
+      // Clean up by removing the class on onmount
       document.body.classList.remove(styles.homeBody);
     };
   }, []);
 
   return (
     <>
+    {/* Home Page Wrapper */}
       <div className={styles.homeWrapper}>
         <div className={styles.heroSection}>
           <div className={styles.mainContent}>

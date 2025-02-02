@@ -10,6 +10,7 @@ import randomDestinationImage from "../assets/images/random-destination.webp";
 import znappedImage from "../assets/images/znapped.webp";
 
 const Projects = () => {
+  // List of Projects with their details
   const projects = [
     {
       name: "Znapped",
@@ -48,6 +49,7 @@ const Projects = () => {
     },
   ];
 
+  // Slider settings for react-slick
   const sliderSettings = {
     dots: true, // Show navigation dots
     infinite: true,

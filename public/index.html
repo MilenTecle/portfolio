@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" >
+    <!-- Favicon for the website-->
     <link rel="icon" href="%PUBLIC_URL%/favicon-16x16.png" >
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <meta name="theme-color" content="#000000" >
@@ -10,7 +11,10 @@
       content="Milen's portfolio - Built with React"
     >
 
-    <!-- Preconnect and DNS Prefetch -->
+    <!--
+    Preconnect and DNS Prefetch:
+    These help improve performance by establishing early connections to external resources
+     -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -34,11 +38,13 @@
         href="%PUBLIC_URL%/manifest.json"
         crossorigin="use-credentials"
     >
+    <!-- Preload fonts to improve page load performance-->
     <link
         rel="preload"
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         as="style" onload="this.onload=null;this.rel='stylesheet'"
     >
+    <!-- Preloading background images to improve LCP-->
     <link
         rel="preload"
         href="/assets/images/background.webp"
