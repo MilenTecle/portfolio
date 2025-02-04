@@ -16,7 +16,7 @@ const Projects = () => {
       name: "Znapped",
       description: "A full-stack social media platform built with React.js and Django REST Framework. Features include user authentication, posts, following functionality, likes, comments, direct messaging, and real-time notifications.",
       image: znappedImage,
-      liveLink: "https://znapped-972f129d36da.herokuapp.com/",
+      liveLink: "https://znapped.vercel.app/",
       repoLink: "https://github.com/MilenTecle/znapped",
     },
     {
