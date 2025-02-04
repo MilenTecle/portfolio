@@ -23,7 +23,7 @@ const Projects = () => {
       name: "Inventory Manager",
       description: "A Django-based app for managing inventories, designed to promote sustainable living. Features include creating, organizing, and sharing item lists with a user-friendly interface. Each list is linked to a unique QR code for seamless sharing.",
       image: inventoryManagerImage,
-      liveLink: "https://inventory-manager-milen-aa94458871b4.herokuapp.com/",
+      liveLink: "https://inventory-manager-3vk0.onrender.com/",
       repoLink: "https://github.com/MilenTecle/Inventory-Manager",
     },
     {
