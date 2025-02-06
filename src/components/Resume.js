@@ -34,7 +34,7 @@ const Resume = () => {
           <div className={styles.timeline}>
             <div className={styles.timelineItem}>
               <h3>Full Stack Developer</h3>
-              <span>Code Institute | August 2023 - Ongoing</span>
+              <span>Code Institute | August 2023 - January 2025</span>
               <p>
                 Credit-rated by University of West of Scotland. Comprehensive training in backend and frontend
                 technologies.
