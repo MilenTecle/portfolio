@@ -13,11 +13,11 @@ const Projects = () => {
   // List of Projects with their details
   const projects = [
     {
-      name: "Znapped",
-      description: "A full-stack social media platform built with React.js and Django REST Framework. Features include user authentication, posts, following functionality, likes, comments, direct messaging, and real-time notifications.",
-      image: znappedImage,
-      liveLink: "https://znapped-972f129d36da.herokuapp.com/",
-      repoLink: "https://github.com/MilenTecle/znapped",
+      name: "Random Destination Generator",
+      description: "A Python terminal app that generates random travel destinations based on the user's continent choice. Data is retrieved via the Google Sheets API, and the app runs on the Code Institute's Heroku mock terminal.",
+      image: randomDestinationImage,
+      liveLink: "https://random-destination-generator-3e9ef050a262.herokuapp.com/",
+      repoLink: "https://github.com/MilenTecle/random-destination",
     },
     {
       name: "Inventory Manager",
@@ -27,11 +27,11 @@ const Projects = () => {
       repoLink: "https://github.com/MilenTecle/Inventory-Manager",
     },
     {
-      name: "Random Destination Generator",
-      description: "A Python terminal app that generates random travel destinations based on the user's continent choice. Data is retrieved via the Google Sheets API, and the app runs on the Code Institute's Heroku mock terminal.",
-      image: randomDestinationImage,
-      liveLink: "https://random-destination-generator-3e9ef050a262.herokuapp.com/",
-      repoLink: "https://github.com/MilenTecle/random-destination",
+      name: "Znapped",
+      description: "A full-stack social media platform built with React.js and Django REST Framework. Features include user authentication, posts, following functionality, likes, comments, direct messaging, and real-time notifications.",
+      image: znappedImage,
+      liveLink: "https://znapped-972f129d36da.herokuapp.com/",
+      repoLink: "https://github.com/MilenTecle/znapped",
     },
     {
       name: "Human Body Quiz",
