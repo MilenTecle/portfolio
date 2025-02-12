@@ -73,6 +73,7 @@
   .btnSend:hover {
     background-color: #4f5543; /* Dark Olive */
     border-color: #4f5543;
+    color: white;
   }
 
   /* Alert message */

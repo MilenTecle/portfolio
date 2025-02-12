@@ -42,7 +42,7 @@ const ProjectCard = ({ project }) => {
               href={project.liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className={`btn btn-primary ${styles.viewLiveButton}`}
+              className={`btn ${styles.viewLiveButton}`}
             >
               View Live
             </a>
