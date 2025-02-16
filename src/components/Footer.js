@@ -32,9 +32,8 @@ const Footer = () => {
           <i className="fab fa-facebook"></i>
         </a>
         <a
-          href="/cv-milen-tecle.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/cv-milen-tecle.pdf?v=2"
+          download="Milen-Tecle-CV.pdf"
           className={styles.icon}
         >
           <i className="fa fa-download"></i>
