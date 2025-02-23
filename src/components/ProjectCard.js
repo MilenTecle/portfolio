@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "../styles/Projects.module.css";
+import ReactGA from "react-ga4";
 
 const ProjectCard = ({ project }) => {
   // State to manage the "Read More" toggle for long descriptions
@@ -8,6 +9,15 @@ const ProjectCard = ({ project }) => {
   // Function to handle read more/read less state
   const handleReadMore = () => {
     setReadMore((prev) => !prev);
+  };
+
+  const handleButtonClick = (buttonType) => {
+    // Track a custom event when the buttons are clicked
+    ReactGA.event({
+      category: 'Project',
+      action: 'click',
+      label: `${project.name} ${buttonType}`,
+    });
   };
 
   return (
@@ -43,6 +53,7 @@ const ProjectCard = ({ project }) => {
               target="_blank"
               rel="noopener noreferrer"
               className={`btn ${styles.viewLiveButton}`}
+              onClick={() => handleButtonClick('View Live')}
             >
               View Live
             </a>
@@ -51,6 +62,7 @@ const ProjectCard = ({ project }) => {
               target="_blank"
               rel="noopener noreferrer"
               className={`btn btn-secondary ${styles.repoButton}`}
+              onClick={() => handleButtonClick('github Repo')}
             >
               GitHub Repo
             </a>
