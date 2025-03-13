@@ -33,7 +33,7 @@ const Resume = () => {
           <h2>Education</h2>
           <div className={styles.timeline}>
             <div className={styles.timelineItem}>
-              <h3>Full Stack Developer</h3>
+              <h3>Diploma in Fullstack Software Development (Advanced Front End)</h3>
               <span>Code Institute | August 2023 - January 2025</span>
               <p>
                 Credit-rated by University of West of Scotland. Comprehensive training in backend and frontend
@@ -80,11 +80,9 @@ const Resume = () => {
               <h3>HR Coordinator</h3>
               <span>Mannheimer Swartling Advokatbyrå AB | May 2018 - Ongoing</span>
               <ul className={styles.bulletList}>
-                <li>Process and analyze HR statistics to support decision-making.</li>
+                <li>Process and analyze HR statistics to support decision-making, leveraging data tools like Excel and HR analytics platforms.</li>
                 <li>Responsible for maintaining and optimizing HR-related systems, to enhance employee communication and engagement.</li>
-                <li>Draft contracts and manage secondments, ensuring compliance and efficiency.</li>
                 <li>Identify and drive workflow improvements, leveraging HR technology to optimize processes.</li>
-                <li>Collaborate with cross-functional teams to implement new policies and improve employee satisfaction.</li>
               </ul>
             </div>
             <div className={styles.timelineItem}>
@@ -93,7 +91,7 @@ const Resume = () => {
               <ul className={styles.bulletList}>
                 <li>Managed projects in a start-up environment, focusing on scaling operations and team-building.</li>
                 <li>Directed internal and external communications to ensure consistency and clarity.</li>
-                <li> Collaborated with cross-functional teams to test and implement new website features, improving user engagement.</li>
+                <li>Collaborated with cross-functional teams to test and implement new website features, improving user engagement.</li>
               </ul>
             </div>
             <div className={styles.timelineItem}>

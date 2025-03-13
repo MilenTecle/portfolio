@@ -68,7 +68,7 @@ const NavBar = () => {
             {/* CV Download Link */}
             <NavLink
               className={`${styles.NavLink} nav-link`}
-              to="/cv-milen-tecle.pdf?v=2"
+              to="/cv-milen-tecle.pdf"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setExpanded(false)}
