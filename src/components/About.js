@@ -22,25 +22,24 @@ const AboutMe = () => {
         <section className={styles.section}>
           <h2>Who Am I?</h2>
           <p>
-          I’m Milen Tecle, a Junior Full Stack Software Developer based in Stockholm, Sweden. With over 5 years of HR experience and a passion for technology,
-          I bring a unique combination of people skills and technical expertise to every project. My journey into tech is driven by a desire to create impactful,
-          user-friendly solutions that solve real-world problems.
+            I’m Milen Tecle, a Junior Software Developer based in Stockholm, Sweden, transitioning from a rewarding career in HR to tech. With 5+ years of HR experience and a passion for automation, process optimization, and data-driven solutions, 
+            I bring a unique blend of people skills and technical expertise to every project. My journey into tech is fueled by a drive to develop innovative, user-friendly solutions that improve efficiency and solve real-world problems.
           </p>
         </section>
 
         <section className={styles.section}>
           <h2>What I Do</h2>
           <p>
-          I specialize in developing responsive, scalable applications using React, Django, Python, and SQL. My expertise spans front-end and back-end technologies,
-          enabling me to build solutions that are efficient, user-friendly, and impactful.
+            I design and build scalable, responsive applications using React, Django, Python, and SQL. My full-stack expertise allows me to develop seamless and efficient solutions, 
+            focusing on API development, process automation, and user-centric interfaces.
           </p>
         </section>
 
         <section className={styles.section}>
           <h2>Why Hire Me?</h2>
           <p>
-          My unique blend of technical skills and human-centered thinking allows me to contribute to scalable, user-focused applications. I thrive in collaborative environments and I am
-          passionate about solving complex problems through innovative solutions.
+            I combine technical skills with human-centered problem-solving, making me an asset for teams developing HR Tech, automation tools, or data-driven platforms. 
+            I thrive in collaborative environments, enjoy solving complex problems, and am continuously expanding my expertise to create impactful digital solutions.
           </p>
         </section>
 

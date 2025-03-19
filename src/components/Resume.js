@@ -10,7 +10,7 @@ const Resume = () => {
       <header className={styles.hero}>
         <img src={avatar} alt="Milen Tecle" loading="lazy" />
         <h1>Milen Tecle</h1>
-        <p>Junior Full Stack Software Developer | HR Professional</p>
+        <p>Junior Software Developer | HR Professional</p>
         <p>
           Email: <a href="mailto:milen_tecle@gmail.com">milen_tecle@gmail.com</a> | Phone: +46 737681850
         </p>
@@ -21,9 +21,11 @@ const Resume = () => {
         <section className={`${styles.section} mb-5 `}>
           <h2>Profile</h2>
           <p>
-          I am a self-driven professional transitioning from HR to tech, with a strong foundation in Full Stack Development. Skilled in React, Django, Python, and SQL,
-          I am passionate about building scalable, user-friendly applications. My background in HR and project management enhances my ability to collaborate effectively and deliver innovative
-          solutions while continuously expanding my technical expertise.
+            I am a self-driven Junior Software Developer transitioning from HR to tech, with a strong foundation in React, Django, Python, and SQL. 
+            My passion lies in building user-friendly, scalable applications and developing automation-driven solutions to improve workflows and efficiency.
+
+            With 5+ years of HR and project management experience, I excel in collaborating across teams, problem-solving, and optimizing processes through technology. 
+            I am eager to apply my expertise in full-stack development and HR Tech solutions, continuously learning and improving along the way.
           </p>
         </section>
 
