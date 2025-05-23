@@ -32,7 +32,7 @@ const Footer = () => {
           <i className="fab fa-facebook"></i>
         </a>
         <a
-          href="/cv-milen-tecle.pdf?v=2"
+          href="/cv-milen-tecle.pdf"
           download="Milen-Tecle-CV.pdf"
           className={styles.icon}
         >
