@@ -21,11 +21,10 @@ const Resume = () => {
         <section className={`${styles.section} mb-5 `}>
           <h2>Profile</h2>
           <p>
-            I am a self-driven Junior Software Developer transitioning from HR to tech, with a strong foundation in React, Django, Python, and SQL. 
-            My passion lies in building user-friendly, scalable applications and developing automation-driven solutions to improve workflows and efficiency.
-
-            With 5+ years of HR and project management experience, I excel in collaborating across teams, problem-solving, and optimizing processes through technology. 
-            I am eager to apply my expertise in full-stack development and HR Tech solutions, continuously learning and improving along the way.
+            I'm a curious and driven developer with a background in HR and a growing passion for backend development and automation. 
+            After completing Code Institute’s Full-Stack Diploma, I’ve continued to deepen my skills in Python, Django, and API design.
+            
+            I enjoy combining structure, creativity, and user experience in everything I build. Outside of code, I’m also navigating life with two energetic kids and a head full of ideas.
           </p>
         </section>
 
@@ -69,6 +68,8 @@ const Resume = () => {
                 <li><strong>Frameworks & Libraries:</strong> Django, React, Bootstrap</li>
                 <li><strong>Version Control:</strong> Git, GitHub</li>
                 <li><strong>Additional:</strong> Agile, Design Thinking, UX Design</li>
+                <li><strong>Certifications:</strong> JavaScript Algorithms & Data Structures (freeCodeCamp)</li>
+                <li><strong>Focus Areas:</strong> Backend development, APIs, automation, and data-driven projects</li>
               </ul>
             </div>
           </div>
@@ -79,17 +80,23 @@ const Resume = () => {
           <h2>Work Experience</h2>
           <div className={styles.timeline}>
             <div className={styles.timelineItem}>
-              <h3>HR Coordinator</h3>
-              <span>Mannheimer Swartling Advokatbyrå AB | May 2018 - Ongoing</span>
+              <h3>Mannheimer Swartling Advokatbyrå AB</h3>
+              <span>HR Business Systems Advisor | May 2025 - ongoing</span>
               <ul className={styles.bulletList}>
-                <li>Process and analyze HR statistics to support decision-making, leveraging data tools like Excel and HR analytics platforms.</li>
-                <li>Responsible for maintaining and optimizing HR-related systems, to enhance employee communication and engagement.</li>
-                <li>Identify and drive workflow improvements, leveraging HR technology to optimize processes.</li>
+                <li>Leading HR system implementation and digital process automation initiatives.</li>
+                <li>Driving technical improvements across HR operations, bridging people, process, and tech.</li>
+                <li>Building on my fullstack diploma and automation interests to support data-driven HR development.</li>
+              </ul>
+              <span>HR Coordinator | May 2018 - April 2025</span>
+              <ul className={styles.bulletList}>
+                <li>Produced and analyzed HR statistics to support strategic decisions.</li>
+                <li>Managed contracts and employment documentation, ensuring compliance and process efficiency.</li>
+                <li>Initiated system and workflow improvements, sparking a deeper interest in automation and HR tech.</li>
               </ul>
             </div>
             <div className={styles.timelineItem}>
-              <h3>Marketing, IT, and Communications Coordinator</h3>
-              <span>Transfer Jobb AB | March 2016 - January 2018</span>
+              <h3>Transfer Jobb AB </h3>
+              <span>Marketing, IT, and Communications Coordinator | March 2016 - January 2018</span>
               <ul className={styles.bulletList}>
                 <li>Managed projects in a start-up environment, focusing on scaling operations and team-building.</li>
                 <li>Directed internal and external communications to ensure consistency and clarity.</li>
@@ -97,8 +104,8 @@ const Resume = () => {
               </ul>
             </div>
             <div className={styles.timelineItem}>
-              <h3>Coach</h3>
-              <span>Resursteamet AB | January 2014 - December 2015</span>
+              <h3>Resursteamet AB</h3>
+              <span>Coach | January 2014 - December 2015</span>
               <ul className={styles.bulletList}>
                 <li>Coached individuals with neuropsychiatric disabilities, helping them achieve job-readiness.</li>
                 <li>Developed personalized plans, coordinating meetings with clients and teams to achieve tailored goals.</li>
@@ -106,8 +113,8 @@ const Resume = () => {
               </ul>
             </div>
             <div className={styles.timelineItem}>
-              <h3>Occupational Therapist</h3>
-              <span>Arbetsmarknadsinsatser, Rinkeby-Kista SDF | January 2011 - December 2013</span>
+              <h3>Arbetsmarknadsinsatser, Rinkeby-Kista SDF</h3>
+              <span>Occupational Therapist | January 2011 - December 2013</span>
               <ul className={styles.bulletList}>
                 <li>Conducted workplace assessments for individuals transitioning into the labor market.</li>
                 <li>Utilized motivational interviewing to empower clients and promote positive outcomes.</li>

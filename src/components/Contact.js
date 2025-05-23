@@ -13,7 +13,7 @@ const Contact = () => {
         <div className="text-center mb-5">
           <h2 className={styles.contactHeading}>Let’s Connect!</h2>
           <p className={styles.contactText}>
-            Whether you’re looking for a passionate developer to join your team or need a fresh perspective on your project, I’m here to help. With a strong drive to learn and grow, I’m excited to contribute to your success. Contact me below to start the conversation.
+            Need someone who can bridge business understanding with backend logic? With a background in HR and a focus on automation and data-driven solutions, I bring a blend of people insight and technical skills. Let’s connect and see how I can contribute to your next project.
           </p>
         </div>
         {/* Contact form */}

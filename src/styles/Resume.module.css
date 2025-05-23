@@ -89,14 +89,15 @@
   }
 
   .timelineItem h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
-    color: #6b705c; /* Olive Green */
+    color: #4f5543; /* Olive Green */
   }
 
   .timelineItem span {
     font-size: 0.9rem;
-    color: #4f5543; /* Dark Olive */
+    font-weight: bold;
+    color:  #6b705c; /* Dark Olive */
   }
 
   .timelineItem p {
